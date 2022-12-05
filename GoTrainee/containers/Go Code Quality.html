@@ -1,0 +1,657 @@
+<body style="margin:0;background:#f4f4f4;font-family:Segoe UI"><style>
+        img { max-width: 100%; }
+        a {
+          text-decoration: none;
+          color: #2e70ab;
+        }
+        a:visited {
+          color: #822ec7;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        pre {
+          background-color: #3B4252;
+          color: #D8DEE9;
+          padding: 15px;
+          border-radius: 8px;
+        }
+        :not(pre) > code {
+          background-color: #f0f0f0;
+          padding: 2px;
+          border: solid 1px #dadada;
+          border-radius: 4px;
+          font-size: 12;
+          color: #eb1c23;
+        }
+      </style><div style="max-width:850px;margin:25px auto;padding:25px 40px 40px;background:#fff;box-shadow:0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)"><h1 style="margin:0;text-align:center;font-size:48px;text-transform:capitalize;font-weight:500;color:#4c4a6f">Go Code Quality</h1><hr style="display:block;width:90px;height:4px;margin:30px auto;content:;border:none;border-radius:3px;background:#4c4a6f"/><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>Effective Go</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://golang.org/doc/effective_go.html"><p style="font-weight:500;font-size:20px;margin:10px 0">Go best practices and recipes</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Go best practices</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://youtu.be/MzTcsI6tn-0"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn Go best practices</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Organizing Go code</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://blog.golang.org/organizing-go-code"><p style="font-weight:500;font-size:20px;margin:10px 0">How to organize your work</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Standard package layout</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1"><p style="font-weight:500;font-size:20px;margin:10px 0">How to layout your Go code</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">4 h</p></div>Building WTF Dial</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://medium.com/wtf-dial/wtf-dial-domain-model-9655cd523182"><p style="font-weight:500;font-size:20px;margin:10px 0">Practical example on package layout</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">24 h</p></div>Code Refactoring</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Refactor your code according to the previous sections.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>refactoring</li><ul></ul><li>style</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only Go standard library should be used.</li></ul></div><div style="margin:10px 0"><ul><li>the application should be split into several layers.</li><li>main package should be used only for dependency injection purpose.</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">3 h</p></div>Go modules</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/golang/go/wiki/Modules"><p style="font-weight:500;font-size:20px;margin:10px 0">Go modules concepts and usage</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">4 h</p></div>Add Dependencies</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Add all your dependencies using Go Modules.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>modules</li><ul></ul><li>dependencies</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only Go standard library should be used.</li></ul></div><div style="margin:10px 0"><ul><li>all external dependencies should be declared using mod file.</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Godoc: documenting Go code</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://blog.golang.org/godoc-documenting-go-code"><p style="font-weight:500;font-size:20px;margin:10px 0">How to document your code</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Go fmt your code</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://blog.golang.org/go-fmt-your-code"><p style="font-weight:500;font-size:20px;margin:10px 0">Go code formatter</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Goimports</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://godoc.org/golang.org/x/tools/cmd/goimports"><p style="font-weight:500;font-size:20px;margin:10px 0">Import optimization</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Meta Linter</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/golangci/golangci-lint"><p style="font-weight:500;font-size:20px;margin:10px 0">Set of linters and static analyzers to improve Go code</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">8 h</p></div>Add linters</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Add linters and improve your code using their suggestions.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>linter</li><ul></ul><li>style</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only Go standard library should be used.</li></ul></div><div style="margin:10px 0"><ul><li>install golangci-lint binary to your system (not as a project dependency).</li><li>configure your project to use all sub-linters from golangci-lint. Config file for the linter should be created and
+placed under the project directory.</li><li>run golangci-lint and fix all mentioned issues.</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">3 h</p></div>OpenAPI 3.0</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://swagger.io/specification/"><p style="font-weight:500;font-size:20px;margin:10px 0">OpenAPI 3.0 specification</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">8 h</p></div>Add API documentation</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Add documentation for your API using OpenAPI 3.0</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>API</li><ul></ul><li>documentation</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only Go standard library should be used.</li></ul></div><div style="margin:10px 0"><ul><li>create documentation for your REST API using yaml file from OpenAPI 3.0 specification.</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Makefile</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://en.wikipedia.org/wiki/Makefile"><p style="font-weight:500;font-size:20px;margin:10px 0">Makefile the basics</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">3 h</p></div>Create makefile</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Create makefile that run all formatters/linters/tests at once.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>build</li><ul></ul><li>make</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only Go standard library should be used.</li></ul></div><div style="margin:10px 0"><ul><li>makefile should contain a separate task to format/lint/test your code.</li><li>makefile should contain a separate task to just build your code.</li><li>makefile should contain default task that depends on the previous ones and run them at once.</li></ul></div></div></div></div></body>

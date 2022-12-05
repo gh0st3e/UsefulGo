@@ -1,0 +1,418 @@
+<body style="margin:0;background:#f4f4f4;font-family:Segoe UI"><style>
+        img { max-width: 100%; }
+        a {
+          text-decoration: none;
+          color: #2e70ab;
+        }
+        a:visited {
+          color: #822ec7;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        pre {
+          background-color: #3B4252;
+          color: #D8DEE9;
+          padding: 15px;
+          border-radius: 8px;
+        }
+        :not(pre) > code {
+          background-color: #f0f0f0;
+          padding: 2px;
+          border: solid 1px #dadada;
+          border-radius: 4px;
+          font-size: 12;
+          color: #eb1c23;
+        }
+      </style><div style="max-width:850px;margin:25px auto;padding:25px 40px 40px;background:#fff;box-shadow:0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)"><h1 style="margin:0;text-align:center;font-size:48px;text-transform:capitalize;font-weight:500;color:#4c4a6f">Database SQL Fundamentals</h1><hr style="display:block;width:90px;height:4px;margin:30px auto;content:;border:none;border-radius:3px;background:#4c4a6f"/><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">16 h</p></div>Transact-SQL Reference</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://docs.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-2017"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about Transact SQL capabilities</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">16 h</p></div>Transact-SQL Tutorial</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.youtube.com/watch?v=GOvQUd6-ttE&amp;list=PLvItDmb0sZw_ALKpj5uy5k71w28L5Xmol"><p style="font-weight:500;font-size:20px;margin:10px 0">Watch screencasts about Transact SQL</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>A Visual Explanation of SQL Joins</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://blog.codinghorror.com/a-visual-explanation-of-sql-joins/"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about sql joins</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">4 h</p></div>Postgre SQL Tutorial</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.youtube.com/watch?v=AjUVGzSuO_k&amp;list=PLvItDmb0sZw_9bh2KeIKe4KkqKmhLbj3Z&amp;index=2"><p style="font-weight:500;font-size:20px;margin:10px 0">Watch screencasts about PostgreSQL</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">24 h</p></div>PostgreSQL Manuals</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.postgresql.org/docs/manuals/"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about PostgreSQL</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>PostgreSQL JSON</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.postgresql.org/docs/9.5/functions-json.html"><p style="font-weight:500;font-size:20px;margin:10px 0">Read documentation about JSON function in PostgreSQL</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">24 h</p></div>Medical Research</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Write sql queries and functions to perform CRUD operations in the medical research database.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Creating tables</li><ul></ul><li>SQL constraints</li><ul></ul><li>Alter statements</li><ul></ul><li>Indexes</li><ul></ul><li>Getting data</li><ul><li>Subqueries</li><ul></ul><li>Sorting</li><ul></ul><li>Joins</li><ul></ul><li>Conditions</li><ul></ul><li>Grouping</li><ul></ul></ul><li>Modifying data</li><ul></ul><li>SQL Functions</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>If not specified, feel free to choose between MS SQL Server and Postgre SQL.</li><li>Remember about code style and naming conventions.</li></ul></div><div style="margin:10px 0"><html><head></head><body><p>Create the following tables:</p><ul><li><p>Clinics — information about clinics (Name, Address1, Address2, etc).</p></li><li><p>DrugUnits — information about drug units (DrugUnitId, Name, DrugType etc.)</p></li><li><p>DrugType — enum-like table with information about possible drug types. E.g., A,B,C or Placebo, Paracetamol etc.</p><table><thead><tr><th>DrugTypeId</th><th>Value</th></tr></thead><tbody><tr><td>1</td><td>A</td></tr><tr><td>2</td><td>B</td></tr><tr><td>3</td><td>C</td></tr></tbody></table></li><li><p>Patients — information about patients (Date of Birth, Initials, SelectedDrugType, Status etc.)</p></li><li><p>Status — enum-like table with possible patient statuses (Screend, Randomized, Completed, EarlyTerminated etc.) E.g.</p><table><thead><tr><th>StatusId</th><th>Value</th></tr></thead><tbody><tr><td>1</td><td>Screened</td></tr><tr><td>2</td><td>Randomized</td></tr><tr><td>3</td><td>EarlyCompleted</td></tr><tr><td>4</td><td>Completed</td></tr></tbody></table></li><li><p>Gender — enum-like table with gender values</p></li><li><p>Visits — information about patient visits. Think about necessary columns. Assume that one drug unit is dispensed at
+one visit for one patient.</p></li><li><p>Users — information about users (Id, Email, Password, Role). Possible Roles are sponsor, investigator or manager.</p></li></ul><p>Think about relationships between the tables, primary keys etc.</p><p>Create necessary indexes to spead up the search operations.</p><p>Requirements to data population:</p><ul><li>All data should be close to real data. That is, there shouldn&#x27;t be &quot;test&quot;, &quot;123&quot; etc. There should be something, for
+example, &quot;St. Mary Hospital&quot;, &quot;John Doe&quot; etc.</li><li>At least two patient with one visit</li><li>At least two patient with several visits</li><li>At least two patient completed all visits</li><li>At least two clinic without patients</li><li>At least two clinic without drugs</li><li>At least two clinic with drugs and patients</li><li>At least three drug types</li></ul><p>Insert data queries must be written manually. UI tools usage is prohibited.</p><p>Queries:</p><ul><li>Write a query that will choose patients with only one visit.</li><li>Write a query that will choose patients who completed all visits.</li><li>Write a query that will choose clinics with patients who performed at least one visit.</li><li>Write a query that will choose clinics with no patients.</li><li>Write a query that will choose clinics with patients who completed all visits.</li><li>Write a query that will show the number of visits performed at each clinic.</li><li>Write a query that will show the number of drugs of each type.</li><li>Write a query that will show the number of drugs of what type were dispensed.</li><li>Write a query that will show the number of patients of each status.</li><li>Write a query that will select drug units of the drug type that was not dispensed for any patient.</li><li>Write a query that will add Expiration Date to the drug units and fill that column.</li><li>Write a query that will select the expired drug units.</li><li>Write a SQL function to count the required number of drug units to complete the rest patients&#x27; visits at the specified
+clinic.</li><li>Write a SQL function that will randomly choose the drug type and assign it to the specified patient.</li><li>Write a SQL function that will randomly choose available drug unit of the specified drug type and assign it to the
+specified patient.</li></ul><p>The result should be a sql file with requests and comments for each request that it does.</p></body></html></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">16 h</p></div>Update Great Star Financial Profile</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Implement a stored procedure that will update user data in the database table based on the values from another table.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Creating tables</li><ul></ul><li>Getting data</li><ul><li>Conditions</li><ul></ul><li>Joins</li><ul></ul></ul><li>Modifying data</li><ul></ul><li>Stored procedures</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>If not specified, feel free to choose between MS SQL Server and Postgre SQL.</li><li>Remember about code style and naming conventions.</li></ul></div><div style="margin:10px 0"><html><head></head><body><p>Use MS SQL Server</p><p>Instructions to create database:</p><ul><li>Create database with name <strong>GreatStarFinancial</strong>;</li><li>Create login <strong>gsfuser</strong>;</li><li>Run script: <a href="http://demo.itechart-group.com:13080/assets/27e85fc62b194523c77d34870ddbf4c5742d36e13b8f41fc34e617e631683164.sql">createGreatStarFinancialDB.sql</a></li></ul><p>Technical Scope:</p><ul><li>Call <strong>ResetMembers</strong> stored procedure;</li><li>Take data from the <strong>UserImportData</strong> table after stored procedure is called and on the base of the values of it
+update user information in the Members table in accordance with the requirements specified below:</li><li>If <strong>RegisteredRep = true</strong>, then do the following:<ul><li>Find the user’s account in the Members table.</li><li>Append <strong>“, Financial Adviser”</strong> to the AppearsAs field. I.e., Current value is <strong>John Doe</strong> after the upload take
+the value in the first name and last name and then append <strong>, Financial Adviser</strong> to create a string of <strong>John Doe,
+Financial Adviser</strong> and replace the value in the <strong>Appears as</strong> field with the new string i.e. <strong>John Doe, Financial
+Adviser</strong></li><li>Update <strong>Disclaimer</strong> field with the following value: <strong>Financial Adviser offering investment advisory services
+through Great Star LLC, a Registered Investment Adviser Registered Representative, Great Star LLC, A Licensed
+Insurance Agency</strong></li><li>Add user to the company which name is in the Company Name field of the UserImportData table.</li></ul></li><li>If <strong>EagleStrategies = true</strong>, then do the following:<ul><li>Find the user’s account in the Members table.</li><li>Append “**, Financial Services Professional<strong>” to the **Appears as</strong> field. I.e., current value is <strong>John Doe</strong>
+after the upload take the value in the first name and last name and then append <strong>, Financial Services
+Professional</strong> to create a string of <strong>John Doe, Financial Services Professional</strong> and replace the value in the
+<strong>Appears as</strong> field with the new string i.e. <strong>John Doe, Financial Services Professional</strong></li><li>Update <strong>Disclaimer</strong> field with the following value: <strong>Registered Representative, Great Star Inc, A Licensed
+Insurance Agency. Agent with Great Star Incorporated</strong></li><li>Add user to the company which name is in the CompanyName field of the UserImportData table.</li></ul></li><li>If <strong>DBA = true</strong>, then do the following:<ul><li>Find the user’s account in the Members table.</li><li>Append “**, Investment Professional<strong>” to the **Appears as</strong> field. I.e., current value is <strong>John Doe</strong> after the
+upload take the value in the first name and last name and then append <strong>, Investment Professional</strong> to create a
+string of <strong>John Doe, Investment Professional</strong> and replace the value in the <strong>Appears as</strong> field with the new
+string i.e. <strong>John Doe, Investment Professional</strong></li><li>Update <strong>Disclaimer</strong> field with the following value: <strong>Registered Representative, Great Star Securities LLC. %DBA
+Name% is not owned or operated by Great Star Securities LLC or its affiliates. %DBA Name% should be replaced with
+the value from the same field in the UserImportData table</strong></li><li>Add user to the company which name is in the CompanyName field of the UserImportData  table.</li></ul></li><li>If Members table doesn&#x27;t contain user, this user should be inserted into it and columns should contain values as
+specified above.</li><li>Put entire logic into a new stored procedure.</li></ul></body></html></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">12 h</p></div>Requests to JSON</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Implement a list of tasks related to work with PostgreSQL JSON data</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Requests to JSON</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>If not specified, feel free to choose between MS SQL Server and Postgre SQL.</li><li>Remember about code style and naming conventions.</li></ul></div><div style="margin:10px 0"><html><head></head><body><ol><li>Generate data for your database <a href="https://www.json-generator.com/">here</a> and write it to the rable of the following
+structure:</li></ol><table><thead><tr><th>Id</th><th>Data</th><th>ModifiedOn</th></tr></thead><tbody><tr><td>objectId</td><td>jsonb</td><td>date</td></tr></tbody></table><p>Data should be generated from two templates:</p><pre><code class="language-js">[
+  &#x27;{{repeat(1, 2)}}&#x27;,
+  {
+    VehicleId: &#x27;{{objectId()}}&#x27;,
+    Make: &#x27;{{random(&quot;Toyota&quot;, &quot;Honda&quot;, &quot;BMW&quot;)}}&#x27;,
+    IsSold: &#x27;{{bool()}}&#x27;,
+    SoldPrice: &#x27;{{floating(1000, 4000, 2)}}&#x27;,
+    PriceHistory: [
+      &#x27;{{repeat(10)}}&#x27;,
+      {
+        PricedBy: &#x27;{{random(&quot;Auto&quot;, &quot;Manual&quot;)}}&#x27;,
+        OfferedPrice: &#x27;{{floating(1000, 6000, 2)}}&#x27;
+      }
+    ],
+    Metadata: {
+      CreatedOn: &#x27;{{date(new Date(2014, 0, 1), new Date(), &quot;YYYY-MM-ddThh:mm:ss.ZZZZZZZ&quot;)}}&#x27;,
+      ModifiedOn: &#x27;{{date(new Date(2014, 0, 1), new Date(), &quot;YYYY-MM-ddThh:mm:ss.ZZZZZZZ&quot;)}}&#x27;
+    }
+  }
+]</code></pre><pre><code class="language-js">[
+  &#x27;{{repeat(1, 2)}}&#x27;,
+  {
+    VehicleId: &#x27;{{objectId()}}&#x27;,
+    Make: &#x27;{{random(&quot;Toyota&quot;, &quot;Honda&quot;, &quot;BMW&quot;)}}&#x27;,
+    PriceHistory: [
+      &#x27;{{repeat(10)}}&#x27;,
+      {
+        PricedBy: &#x27;{{random(&quot;Auto&quot;, &quot;Manual&quot;)}}&#x27;,
+        OfferedPrice: &#x27;{{floating(1000, 6000, 2)}}&#x27;
+      }
+    ],
+    Metadata: {
+      CreatedOn: &#x27;{{date(new Date(2014, 0, 1), new Date(), &quot;YYYY-MM-ddThh:mm:ss.ZZZZZZZ&quot;)}}&#x27;,
+      ModifiedOn: &#x27;{{date(new Date(2014, 0, 1), new Date(), &quot;YYYY-MM-ddThh:mm:ss.ZZZZZZZ&quot;)}}&#x27;
+    }
+  }
+]</code></pre><ol start="2"><li>Write a query to select any row with particular <code>VehicleId</code>.</li><li>Write a query to select rows which <code>Metadata.CreatedOn</code> is greater than particular date.</li><li>Write a query which groups all price histories for all rows by the <code>PricedBy</code> field and calculates average of
+<code>OfferedPrice</code>.</li><li>Write a query which groups all rows with <code>IsSold = true</code> by <code>Make</code> field and calculate sum of <code>SoldPrice</code> for them.</li><li>Write a query to select all rows which have <code>IsSold</code> and <code>SoldPrice</code> fields.</li></ol></body></html></div></div></div></div></body>

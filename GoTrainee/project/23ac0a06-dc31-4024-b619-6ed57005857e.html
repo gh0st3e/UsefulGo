@@ -1,0 +1,44 @@
+<body style="margin:0;background:#f4f4f4;font-family:Segoe UI"><style>
+        img { max-width: 100%; }
+        a {
+          text-decoration: none;
+          color: #2e70ab;
+        }
+        a:visited {
+          color: #822ec7;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        pre {
+          background-color: #3B4252;
+          color: #D8DEE9;
+          padding: 15px;
+          border-radius: 8px;
+        }
+        :not(pre) > code {
+          background-color: #f0f0f0;
+          padding: 2px;
+          border: solid 1px #dadada;
+          border-radius: 4px;
+          font-size: 12;
+          color: #eb1c23;
+        }
+      </style><div style="max-width:850px;margin:25px auto;padding:25px 40px 40px;background:#fff;box-shadow:0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)"><h1 style="margin:0;text-align:center;font-size:48px;text-transform:capitalize;font-weight:500;color:#4c4a6f">Online car auction</h1><hr style="display:block;width:90px;height:4px;margin:30px auto;content:;border:none;border-radius:3px;background:#4c4a6f"/><div><h2 style="font-weight:500;font-size:30px;margin:10px 0">Short Description</h2><p style="margin:10px 0;font-size:16px">The goal of the online auction is to automate the car pricing process before sale. The person enters information about
+the car going to be offered at the auction. After that the system shows the recommended starting price.</p></div><div><h2 style="font-weight:500;font-size:30px;margin:10px 0">Requirements</h2><h3 id="terminology">Terminology</h3><ul><li>VIN - unique identifier used in car industry to identify vehicles. Must be 17 characters long.</li><li>MSRP - manufacturer&#x27;s suggested retail price. Price set up by manufacturer when it starts selling a car. E.g., Tesla
+Model S Performance has a MSRP of $99,000.</li></ul><h3 id="services">Services</h3><ul><li>VehicleService<ul><li>The service is a simple CRUD service that is used to load new vehicles to the system as well as to update the
+existing ones.</li><li>The vehicles should be written to a storage.</li></ul></li><li>InspectionService<ul><li>The service is used to inspect vehicles. Allows to load more information about vehicles or the information that was
+not provided to <code>VehicleService</code>.</li><li>The service has 2 endpoints:<ul><li><code>GetBuildData</code></li><li><code>InspectVehicle</code></li></ul></li><li>When the user calls <code>VehicleService</code> to load vehicles, the system should call <code>GetBuildData</code> service to get more
+information about the vehicle and write data into a storage. If the data has been provided by both user and system,
+the user data has higher priority.</li><li>The <code>GetBuildData</code> endpoint should receive only <code>VIN</code> and provide such vehicle data like <code>color</code>, <code>engine</code>,
+<code>transmission</code> etc.</li><li>The <code>InspectVehicle</code> endpoint is used to calculate the vehicle condition grade.<ul><li>Accepts <code>VIN</code>, <code>Odometer</code>, <code>Year</code></li><li>Returns grade, which is an integer value from 0 to 50. 0 means a very bad condition, and 50 means excellent grade.</li><li>Validation rules are:<ul><li>If the car is older than 15 years then the grade cannot be higher 35.</li><li>If the odometer is greater than 300,000 km then the grade cannot be higher 30.</li><li>Each year the car loses 1 point in grade. E.g., 3 years old ideal car will have grade = 47, 7 years old - 43.</li><li>The presence of strong scratches reduces the grade by 1.08 times.</li><li>The presence of small scratches reduces the grade by 1.04 times.</li><li>Failures in the electrics reduce the grade by 1.08 times.</li><li>Suspension malfunctions reduce the grade by 1.06 times.</li></ul></li></ul></li></ul></li><li>PricingService<ul><li>Contains <code>GetRecommendedPrice</code> endpoint, which is used to compute the optimized price for the vehicle.<ul><li>Accepts <code>VIN</code>, <code>grade</code>, <code>odometer</code>, <code>exterior color</code>, <code>interior color</code>.</li><li>Required parameters are <code>VIN</code>, <code>grade</code> and <code>odometer</code>.</li><li>Returns price. The implementation must use parameters from the request listed above. It means, that the price
+should depend on them. Also, the service should use the other vehicle data to compute the price. Such data can be
+provided by either <code>InspectionService</code> or <code>VehicleService</code>.</li><li>Price value must be positive non-zero value, not above the MSRP.</li></ul></li></ul></li></ul></div><div><h2 style="font-weight:500;font-size:30px;margin:10px 0">Advanced Requirements</h2><ul><li>Implement bulk endpoints to load multiple vehicle data.</li><li>Implement batching of the multiple vehicle data. E.g., the user wants to load 1,000 vehicles. The system should split
+data into several batches according to batch settings and load several batches in parallel while the other batches are
+waiting for processing. Let&#x27;s say the batch size is 200, so the system should create 5 batches with 200 vehicles in
+each batch. The logic should allow to configure how much batches can be processed in parallel (1, 2, etc.). If the
+settings are confitured to process 2 batches at once, so the system should first load 2 batches with 200 vehicles in
+parallel, then the next 2 batches and after that the rest batch.</li><li>Implement caching of the pricing calls to spead up the process and reduce the impact on the system when the user sends
+same requests.</li><li>Think about possible pricing calls for the same vehicles(what parameters may change), and implement the caching of
+such calls, so that when the user requests the price, it will be already in the system and there will be no need to
+compute it during the call. It will reduce the response time.</li></ul></div></div></body>

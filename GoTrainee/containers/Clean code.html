@@ -1,0 +1,785 @@
+<body style="margin:0;background:#f4f4f4;font-family:Segoe UI"><style>
+        img { max-width: 100%; }
+        a {
+          text-decoration: none;
+          color: #2e70ab;
+        }
+        a:visited {
+          color: #822ec7;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        pre {
+          background-color: #3B4252;
+          color: #D8DEE9;
+          padding: 15px;
+          border-radius: 8px;
+        }
+        :not(pre) > code {
+          background-color: #f0f0f0;
+          padding: 2px;
+          border: solid 1px #dadada;
+          border-radius: 4px;
+          font-size: 12;
+          color: #eb1c23;
+        }
+      </style><div style="max-width:850px;margin:25px auto;padding:25px 40px 40px;background:#fff;box-shadow:0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)"><h1 style="margin:0;text-align:center;font-size:48px;text-transform:capitalize;font-weight:500;color:#4c4a6f">Clean code</h1><hr style="display:block;width:90px;height:4px;margin:30px auto;content:;border:none;border-radius:3px;background:#4c4a6f"/><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Main Principles</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/what-is-refactoring"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn about main principles of refactoring.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Technical debt</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/technical-debt"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn technical debt.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>When to refactor</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/when"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn about when to refactor.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>How to refactor</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/how-to"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn abot how to refactor.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">6 h</p></div>Types of bad code</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/catalog"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn about types of bad code.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">6 h</p></div>Methods of refactoring</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://refactoring.guru/refactoring/techniques"><p style="font-weight:500;font-size:20px;margin:10px 0">Learn about methods of refactoring.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Best Practices</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.thecodingdelight.com/write-clean-code/"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about best practices.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Clean Code Summary and Key Points</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://dzone.com/articles/clean-code-summary-and-key-points"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about best practices.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>JavaScript Clean Code - Best Practices</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://devinduct.com/blogpost/22/javascript-clean-code-best-practices"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about best practices.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>13 Simple Rules for Good Coding</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://hackernoon.com/few-simple-rules-for-good-coding-my-15-years-experience-96cb29d4acd9"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about best practices.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Good Code vs Bad Code</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://medium.com/better-programming/good-code-vs-bad-code-35624b4e91bc"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about best practices.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Why, what, where. Kinds of testing</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/Max-Starling/Notes/blob/master/Testing.md"><p style="font-weight:500;font-size:20px;margin:10px 0">Targets, advantages and disadvantages of different kinds of testing.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Rules of naming</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/labs42io/clean-code-typescript#variables"><p style="font-weight:500;font-size:20px;margin:10px 0">Base rules of variables naming (examples).</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Naming convention</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://en.wikipedia.org/wiki/Naming_convention_(programming)"><p style="font-weight:500;font-size:20px;margin:10px 0">Read about naming conventions.</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Development Principles</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://scotch.io/bar-talk/s-o-l-i-d-the-first-five-principles-of-object-oriented-design"><p style="font-weight:500;font-size:20px;margin:10px 0">Implementation of Development principles</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Design principles</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://medium.com/@derodu/design-patterns-kiss-dry-tda-yagni-soc-828c112b89ee"><p style="font-weight:500;font-size:20px;margin:10px 0">Design principles : kiss, dry, tda, soc, yagni</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">4 h</p></div>Optimization</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="http://optimization.guide/"><p style="font-weight:500;font-size:20px;margin:10px 0">Optimization, optimization techniques, best practice</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Mess Code</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Fix the code with help good refactoring techniques.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Refactoring</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>All code should be linted</li></ul></div><div style="margin:10px 0"><html><head></head><body><p>Fix the code with help good refactoring techniques.</p><p><img src="http://demo.itechart-group.com:13080/assets/c872d1a1f240b5f00ab5471f3a26d04bd7f63f38170f8ad04508c6ce657f6208.png" alt="pic1.png"/></p></body></html></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Grid bad code</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Fix code style issues in the algorithm.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Refactoring</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>All code should be linted</li></ul></div><div style="margin:10px 0"><html><head></head><body><p>Below is the algorithm for initializing points along the edges of a grid, presented as a multidimensional array: grid
+(rows) (columns) The purpose of this code was only to initialize the values ​​of the points that are on the edge of the
+grid - only the top row, bottom row, left column and right column. <strong>GRID_SIZE = 64.</strong></p><pre><code class="language-javascript">for (r = 0; r &lt; GRID_SIZE; ++r) {
+        for (c = 0; c &lt; GRID_SIZE; ++c) {
+            // top edge
+            if (r == 0)
+                grid[r][c] = 0;
+            // left edge
+            if (c == 0)
+                grid[r][c] = 0;
+            // right edge
+            if (c == GRID_SIZE -a 1)
+                grid[r][c] = 0;
+            // bottom edge
+            if (r == GRID_SIZE - 1)
+                grid[r][c] = 0;
+        }
+    }</code></pre><ol><li>Fix the use of 4 conditional statements within 2 loops.</li><li>Improve efficiency, because this loop performs 4096 iterations to set values ​​for only 256 edge points.</li></ol></body></html></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>Naming domain person</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Describe entity human with properties go, run, sit, fight, can fly, has children, sex, turn head on 180 degrees, has
+wife, age, etc.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>Rules of naming</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>All code should be linted</li></ul></div><div style="margin:10px 0"><html><head></head><body><ol><li>Write right names of variables and functions/methods without implementation.</li><li>The entity has to have different types of properties(arrays, strings, numbers etc).</li></ol></body></html></div></div></div></div></body>

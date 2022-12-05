@@ -1,0 +1,582 @@
+<body style="margin:0;background:#f4f4f4;font-family:Segoe UI"><style>
+        img { max-width: 100%; }
+        a {
+          text-decoration: none;
+          color: #2e70ab;
+        }
+        a:visited {
+          color: #822ec7;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        pre {
+          background-color: #3B4252;
+          color: #D8DEE9;
+          padding: 15px;
+          border-radius: 8px;
+        }
+        :not(pre) > code {
+          background-color: #f0f0f0;
+          padding: 2px;
+          border: solid 1px #dadada;
+          border-radius: 4px;
+          font-size: 12;
+          color: #eb1c23;
+        }
+      </style><div style="max-width:850px;margin:25px auto;padding:25px 40px 40px;background:#fff;box-shadow:0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24)"><h1 style="margin:0;text-align:center;font-size:48px;text-transform:capitalize;font-weight:500;color:#4c4a6f">Go HTTP</h1><hr style="display:block;width:90px;height:4px;margin:30px auto;content:;border:none;border-radius:3px;background:#4c4a6f"/><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>REST on wiki</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://ru.wikipedia.org/wiki/REST"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>HTTP Status Codes</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="http://www.restapitutorial.ru/httpstatuscodes.html"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>REST Philosophy</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://habr.com/ru/post/50147/"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>REST API Best Practices</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://habr.com/ru/post/351890/"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>REST JSON API design principles</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://habr.com/ru/post/447322/"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">0.5 h</p></div>HTTP methods in REST APIs</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="http://www.restapitutorial.ru/lessons/httpmethods.html"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Context package</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.youtube.com/watch?v=LSzR0VEraWw"><p style="font-weight:500;font-size:20px;margin:10px 0">Context package in Go</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">24 h</p></div>Implement REST API</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Implement API of a tournaments service.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>http</li><ul></ul><li>json</li><ul></ul><li>REST</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only standard Go library can be used</li></ul></div><div style="margin:10px 0"><p>Implement API of a <a href="../../../../projects/tournament/readme.md">tournaments service</a>.</p><ul><li>only standard library can be used</li><li>use in-memory map as a storage</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">1 h</p></div>Testing HTTP servers in Go</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://www.youtube.com/watch?v=hVFEV-ieeew"><p style="font-weight:500;font-size:20px;margin:10px 0">How to unit test http servers in Go</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">16 h</p></div>Unit test HTTP server</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Write unit tests for your http server.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>http</li><ul></ul><li>testing</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only standard Go library can be used</li></ul></div><div style="margin:10px 0"><ul><li>only standard library can be used</li><li>code coverage should be &gt;= 90%</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>Gorilla mux</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/gorilla/mux"><p style="font-weight:500;font-size:20px;margin:10px 0">De-facto standard Go routing package</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>Testify</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://github.com/stretchr/testify"><p style="font-weight:500;font-size:20px;margin:10px 0">De-facto standard Go testing package</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">16 h</p></div>Add packages</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Refine your server with great packages that became a de-facto standard.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>http</li><ul></ul><li>routing</li><ul></ul><li>testing</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only standard Go library can be used</li></ul></div><div style="margin:10px 0"><ul><li>except from gorilla and testify, only standard library can be used</li><li>code coverage should remain &gt;= 90%</li></ul></div></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">2 h</p></div>HTTP middleware</h1></div><div style="margin:10px 0"><a style="color:#3d7eb8" href="https://medium.com/@matryer/writing-middleware-in-golang-and-how-go-makes-it-so-much-fun-4375c1246e81"><p style="font-weight:500;font-size:20px;margin:10px 0">--</p></a></div></div><div style="margin:5px auto"><style>
+    .plan-item-header {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      height: fit-content;
+    }
+    .plan-item-header::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: #4c4a6f;
+    }
+    .plan-item-header__title {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 500;
+      color: #4c4a6f;
+    }
+    .plan-item-header__estimation-container {
+      background-color: #4c4a6f;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      float: left;
+    }
+    .plan-item-header__estimation-text {
+      font-size: 24px;
+      font-weight: 500;
+      margin: 0;
+      padding: 0 10px 3px;
+      color: #FFFFFF;
+    }
+  </style><div class="plan-item-header"><h1 class="plan-item-header__title"><div class="plan-item-header__estimation-container"><p class="plan-item-header__estimation-text">8 h</p></div>Add HTTP middleware</h1></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Short Description</h3><div style="margin:10px 0">Add HTTP middleware to track all incoming requests.</div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Topics</h3><div style="margin:10px 0"><ul><li>go</li><ul></ul><li>http</li><ul></ul><li>middleware</li><ul></ul><li>logging</li><ul></ul></ul></div></div><div><h3 style="color:#636363;font-weight:500;font-size:20px;margin:10px 0">Requirements</h3><div style="margin:10px 0"><ul><li>Unless it is required in a task, only standard Go library can be used</li></ul></div><div style="margin:10px 0"><ul><li>only standard library can be used</li><li>code coverage should remain &gt;= 90%</li><li>each request should be marked with unique ID</li><li>ID should be propagated further</li><li>middleware should track request timing</li></ul></div></div></div></div></body>
