@@ -1,4 +1,8 @@
-<h1 align="center">Go Books</h1>
+<html>
+  <head>
+  </head>
+  <body>
+    <h1 align="center">Go Books</h1>
 
 <h3 align="center">This package contains Go books and other useful books for go developer</h3>
 
@@ -86,3 +90,5 @@
     <img src="https://static.tildacdn.com/tild3337-3630-4662-b835-363865633265/photo_2020-09-02_182.jpeg" alt="RU_ЯзыкGoДляНачинающих" width="200px" height="300px"/>
   </a>
 </div>
+  </body>
+</html>
