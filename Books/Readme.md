@@ -6,7 +6,7 @@
 
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/91T20f8AJQL._AC_UL600_SR600,600_.jpg" alt="EN_BlackHat" width="200px" height="300px"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="200px" height="300px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BuildingRESTfulWebServicesWithGo.pdf">
