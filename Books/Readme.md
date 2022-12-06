@@ -22,8 +22,6 @@
     <img src="https://m.media-amazon.com/images/I/41kmaB8UBtL._AC_SY780_.jpg" alt="EN_DataStructuresAndAlgorithmsWithGolang" width="200px" height="300px"/>
   </a>
 
-  </br>
-
   <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_EventDrivenArchitectureInGolang.pdf">
     <img src="https://static.packt-cdn.com/products/9781803238012/cover/smaller" alt="EN_EventDrivenArchitectureInGolang" width="200px" height="300px"/>
   </a>
