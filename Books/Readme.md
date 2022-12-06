@@ -5,15 +5,15 @@
 <h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="33%" height="40%"/>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BuildingRESTfulWebServicesWithGo.pdf">
-  <img src="https://m.media-amazon.com/images/I/41n8Zy3SaPL._AC_SY780_.jpg" alt="EN_BuildingRESTfulWebServicesWithGo" width="33%" height="40%"/>
+  <img src="https://m.media-amazon.com/images/I/41n8Zy3SaPL._AC_SY780_.jpg" alt="EN_BuildingRESTfulWebServicesWithGo" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_CloudNativeProgrammingWithGolang.pdf">
-  <img src="https://static01.helion.com.pl/global/okladki/326x466/e_15uq.jpg" alt="EN_CloudNativeProgrammingWithGolang" width="33%" height="40%"/>
+  <img src="https://static01.helion.com.pl/global/okladki/326x466/e_15uq.jpg" alt="EN_CloudNativeProgrammingWithGolang" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_DataStructuresAndAlgorithmsWithGolang.pdf">
