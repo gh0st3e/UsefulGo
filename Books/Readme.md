@@ -1,16 +1,17 @@
 <html>
   <head>
+    <style>
+      a{
+      justify-content:center;
+
+      }
+      .wrapper{
+      display: flex;
+      justify-content:center;}
+  </style>
   </head>
   <body>
-<style>
-a{
-justify-content:center;
-
-}
-.wrapper{
-display: flex;
-justify-content:center;}
-</style>   
+   
     
 <h1 align="center">Go Books</h1>
 
