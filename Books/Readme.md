@@ -1,8 +1,8 @@
 <h1 align="center">Go Books</h1>
 
-<h2>This package contains Go books and other useful books for go developer</h2>
+<h3 align="center">This package contains Go books and other useful books for go developer</h3>
 
-<h2>Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h2>
+<h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
 
 <div style="display: flex; justify-сontent: center; width: 100%">
