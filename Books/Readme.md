@@ -30,3 +30,23 @@
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_EverydayGolang.pdf">
   <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1631331392i/58968985.jpg" alt="EN_EverydayGolang" height="300px"/>
 </a>
+
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_FromRubyToGolang.pdf">
+  <img src="https://m.media-amazon.com/images/I/41MUjQCUsjL._AC_SY780_.jpg" alt="EN_FromRubyToGolang" height="300px"/>
+</a>
+
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_GoLangTheUltimateGuide.pdf">
+  <img src="https://images.routledge.com/common/jackets/crclarge/978103231/9781032312316.jpg" alt="EN_GoLangTheUltimateGuide" height="300px"/>
+</a>
+
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_GoProgramming.pdf">
+  <img src="https://m.media-amazon.com/images/I/51o9KtaXVPL._AC_SY780_.jpg" alt="EN_GoProgramming" height="300px"/>
+</a>
+
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_HandsOnSystemProgrammingWithGo.pdf">
+  <img src="https://static.packt-cdn.com/products/9781789804072/cover/9781789804072-original.jpeg" alt="EN_HandsOnSystemProgrammingWithGo" height="300px"/>
+</a>
+
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_MasteringGoLangBeginner'sGuide.pdf">
+  <img src="https://images.routledge.com/common/jackets/crclarge/978103231/9781032315904.jpg" alt="EN_MasteringGoLangBeginner'sGuide" height="300px"/>
+</a>
