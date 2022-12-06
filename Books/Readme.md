@@ -56,7 +56,7 @@
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_ProGo.pdf">
-  <img src="https://m.media-amazon.com/images/I/41C4xAEBQOL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_PIStarRatingFOURANDHALF%2CBottomLeft%2C360%2C-6_SR600%2C315_ZA17%2C445%2C290%2C400%2C400%2CAmazonEmberBold%2C12%2C4%2C0%2C0%2C5_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg" alt="EN_ProGo" width="200px" height="300px"/>
+  <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-1-4842-7355-5" alt="EN_ProGo" width="200px" height="300px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_SoftwareArchitectureWithGolang.pdf">
