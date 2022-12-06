@@ -5,7 +5,7 @@
 <h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="33%" height="400px"/>
+  <img src="https://cdn11.bigcommerce.com/s-igquupw3/images/stencil/1280x1280/products/1171793/32917119/9781593278656__69334.1664148661.jpg?c=2" alt="EN_BlackHat" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BuildingRESTfulWebServicesWithGo.pdf">
@@ -73,7 +73,7 @@
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/RU_%D0%9C%D0%B8%D0%BA%D1%80%D0%BE%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D1%8B.pdf">
-  <img src="https://basket-01.wb.ru/vol86/part8651/8651224/images/big/1.jpg" alt="RU_Микросервисы" width="33%" height="400px"/>
+  <img src="https://chitatel.by/storage/thumbs/MF/h1001_w1001_MFeReNmgtI1NdHjg4bLF.jpg" alt="RU_Микросервисы" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/RU_%D0%9E%D0%B1%D0%BB%D0%B0%D1%87%D0%BD%D1%8B%D0%B9Go.pdf">
