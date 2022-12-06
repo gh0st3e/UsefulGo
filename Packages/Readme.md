@@ -4,6 +4,5 @@
 </br>
 
 https://github.com/golang/go/wiki/SQLDrivers
-<h6>All sql drivers for Go</h6>
-<h6>Все драйверы SQL баз данных для Go</h6>
+<h6>All sql drivers for Go   |   Все драйверы SQL баз данных для Go</h6>
 
