@@ -5,7 +5,7 @@
 <h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
 
-<div style="display: flex; justify-сontent: center; flex-wrap: wrap; width: 100%;">
+<div style="display: flex; justify-сontent: center; flex-wrap: wrap;">
   
   <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="200px" height="300px"/>
