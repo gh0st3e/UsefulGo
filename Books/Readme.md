@@ -2,7 +2,7 @@
   <head>
   </head>
   <body>
- <style>
+<style>
 a{
 justify-content:center;
 
