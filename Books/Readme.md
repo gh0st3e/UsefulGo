@@ -24,7 +24,7 @@
 </br>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_EventDrivenArchitectureInGolang.pdf">
-  <img src="https://images-na.ssl-images-amazon.com/images/I/71BnlwccHqL._AC_UL600_SR600,400_.jpg" alt="EN_EventDrivenArchitectureInGolang" width="200px" height="300px"/>
+  <img src="https://static.packt-cdn.com/products/9781803238012/cover/smaller" alt="EN_EventDrivenArchitectureInGolang" width="200px" height="300px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_EverydayGolang.pdf">
