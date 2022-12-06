@@ -2,14 +2,25 @@
   <head>
   </head>
   <body>
-    <h1 align="center">Go Books</h1>
+ <style>
+a{
+justify-content:center;
+
+}
+.wrapper{
+display: flex;
+justify-content:center;}
+</style>   
+    
+<h1 align="center">Go Books</h1>
 
 <h3 align="center">This package contains Go books and other useful books for go developer</h3>
 
 <h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
 
-<div style="display:flex; justify-content:center; flex-wrap:wrap;">
+<div class="wrapper">
+<div style="display: flex; justify-content:center; width: 800px;flex-wrap: wrap;">
   <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDalpXjo8TEY_wtTHL5TgRjdEIaOxolQbLgw&usqp=CAU" alt="EN_BlackHat" width="200px" height="300px"/>
   </a>
@@ -90,5 +101,6 @@
     <img src="https://static.tildacdn.com/tild3337-3630-4662-b835-363865633265/photo_2020-09-02_182.jpeg" alt="RU_ЯзыкGoДляНачинающих" width="200px" height="300px"/>
   </a>
 </div>
+    </div>
   </body>
 </html>
