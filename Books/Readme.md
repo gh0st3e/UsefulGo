@@ -33,7 +33,7 @@
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_GoLangTheUltimateGuide.pdf">
-  <img src="https://images.routledge.com/common/jackets/crclarge/978103231/9781032312316.jpg" alt="EN_GoLangTheUltimateGuide" width="33%" height="400px"/>
+  <img src="https://m.media-amazon.com/images/I/61bIbcrzeJL.jpg" alt="EN_GoLangTheUltimateGuide" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_GoProgramming.pdf">
