@@ -45,7 +45,7 @@
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_MasteringGoLangBeginner'sGuide.pdf">
-  <img src="https://images.routledge.com/common/jackets/crclarge/978103231/9781032315904.jpg" alt="EN_MasteringGoLangBeginner'sGuide" width="33%" height="400px"/>
+  <img src="https://img.thriftbooks.com/api/images/i/l/1D286812A026E411AD30A8B1ADA115604BD97161.jpg" alt="EN_MasteringGoLangBeginner'sGuide" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_NetworkProgrammingWithGoLanguage.pdf">
