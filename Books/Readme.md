@@ -4,6 +4,10 @@
 
 <h3 align="center">Эта папка содержит книги по Go, а также некоторые полезные книги для Go разработчика</h3>
 
+<a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_AnIntroductionToProgrammingInGo.pdf">
+  <img src="https://www.golang-book.com/public/img/intro/cover.png" alt="EN_AnIntroductionToProgrammingInGo" width="33%" height="400px"/>
+</a>
+
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
   <img src="https://cdn11.bigcommerce.com/s-igquupw3/images/stencil/1280x1280/products/1171793/32917119/9781593278656__69334.1664148661.jpg?c=2" alt="EN_BlackHat" width="33%" height="400px"/>
 </a>
@@ -83,3 +87,6 @@
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/RU_%D0%AF%D0%B7%D1%8B%D0%BAGo%D0%94%D0%BB%D1%8F%D0%9D%D0%B0%D1%87%D0%B8%D0%BD%D0%B0%D1%8E%D1%89%D0%B8%D1%85.pdf">
   <img src="https://static.tildacdn.com/tild3337-3630-4662-b835-363865633265/photo_2020-09-02_182.jpeg" alt="RU_ЯзыкGoДляНачинающих" width="33%" height="400px"/>
 </a>
+
+
+
