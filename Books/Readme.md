@@ -9,7 +9,7 @@
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BlackHat.pdf">
-  <img src="https://cdn11.bigcommerce.com/s-igquupw3/images/stencil/1280x1280/products/1171793/32917119/9781593278656__69334.1664148661.jpg?c=2" alt="EN_BlackHat" width="33%" height="400px"/>
+  <img src="https://avatars.mds.yandex.net/i?id=0336d446b768f0278fe3bbc734cb4de666412da7-8199736-images-thumbs&n=13" alt="EN_BlackHat" width="33%" height="400px"/>
 </a>
 
 <a href="https://github.com/gh0st3e/UsefulGo/blob/main/Books/EN_BuildingRESTfulWebServicesWithGo.pdf">
